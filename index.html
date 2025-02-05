@@ -2,28 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Personal Portfolio</title>
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="stylesheet.css">
+    <!-- Typed.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+     <!-- scroll reveal -->
+     <script src="https://unpkg.com/scrollreveal"></script>
+    
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+
         <i class="bx bx-menu" id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#art">Art</a>
+            <a href="#books">Books</a>
+            <a href="#contact">Contact</a>
+            <a href="#" class='bx bx-moon' id="toggle-icon"></a>
         </nav>
 
     </header>
+
+    <!-- Home section design -->
+
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hello its Me</h3>
-            <h1>Komal Rani</h1>
+            <h1>Komal <span>राNi</span></h1>
             <h3> And I am  a <span class="multiple-text"></span></h3>
             <p>I am a passionate and dedicated Java Developer with over 3 years of
                  experience in designing, developing, and maintaining scalable and 
@@ -47,111 +63,204 @@
                 <a href="#" ><i class='bx bxl-twitter'></i></a>
                 <a href="#" ><i class='bx bxl-facebook'></i></a>
             </div>
-            <a href="#" class="btn">My Cv</a>
+            <a href="pics/KomalRani_CV.pdf" class="btn">My Cv</a>
         </div>
 
         <div class="home-img">
-<img src="pics/pc-removebg.png" alt="">
+         <img src="pics/komal.png" alt="">
         </div>
     </section>
 
+<!-- About section design -->
 
     <section class="about" id="about">
         <div class="about-img">
-          <img src="pics/pc2-removebg.png" alt=" ">
+          <img src="pics/komal.png" alt=" ">
         </div>
-
-       
 
         <div class="about-content">
-            <h2 class="heading"> About <span>Me</span></h2>
+            <h2 class="heading"> About <span class="typed-heading" data-text="Me"></span></h2>
             <h3>Backend developer</h3>
           <p>
-            My expertise lies in core Java, Spring Boot, Hibernate,
-             and RESTful API development. I have hands-on experience
-              with microservices architecture, database management 
-              using MySQL and PostgreSQL, and implementing efficient
-               data structures and algorithms to optimize application 
-               performance.
+            Passionate software engineer with over 3+ years of experience in developing and maintaining 
+            Java-based applications. Adept in Spring Boot, microservices architecture, and database 
+            management. Strong problem-solving skills with a commitment to continuous learning and 
+            professional growth.
           </p>
-          <a href="#" class="btn">read more</a>
+          <h3>Education</h3>
+          <p>
+            Bachelor of Technology in Computer Science and Engineering<br>
+            Kurukshetra University Haryana, 2016-2020.
+          </p>
         </div>
     </section>
 
+<!-- Skills section design -->
 
-    <section class="services" id="services">
-        <h2 class="heading">My <span> Projects </span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>Java developer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur,
-                     adipisicing elit. Pariatur ab natus vitae 
-                     eaque laboriosam quibusdam fugit aperiam a
-                      omnis nam.</p>
-                      <a href="#" class="btn">Read more</a>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>Spring Boot developer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur,
-                     adipisicing elit. Pariatur ab natus vitae 
-                     eaque laboriosam quibusdam fugit aperiam a
-                      omnis nam.</p>
-                      <a href="#" class="btn">Read more</a>
-            </div>
-
-            <div class="services-box">
-                <i class="bx bx-code-alt"></i>
-                <h3>MySQL developer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur,
-                     adipisicing elit. Pariatur ab natus vitae 
-                     eaque laboriosam quibusdam fugit aperiam a
-                      omnis nam.</p>
-                      <a href="#" class="btn">Read more</a>
-            </div>
-
+<section class="skills" id="skills">
+    <h2 class="heading">My <span class="typed-heading" data-text="Skills"></span></h2>
+    <div class="skills-container">
+        <div class="skill-box">
+            <i class='bx bxl-java'></i>
+            <h3>Java</h3>
         </div>
-    </section>
+        <div class="skill-box">
+            <i class='bx bxl-spring-boot'></i>
+            <h3>Spring Boot</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bx-data'></i>
+            <h3>SQL</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bxl-mongodb'></i>
+            <h3>MongoDB</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bxl-html5'></i>
+            <h3>HTML</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bxl-css3'></i>
+            <h3>CSS</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bxl-javascript'></i>
+            <h3>JavaScript</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bxl-react'></i>
+            <h3>React</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bxl-docker'></i>
+            <h3>Docker</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bxl-kubernetes'></i>
+            <h3>Kubernetes</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bxl-aws'></i>
+            <h3>AWS</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bxl-git'></i>
+            <h3>Git</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bx-cog'></i>
+            <h3>Maven</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bx-test-tube'></i>
+            <h3>JUnit</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bx-code-block'></i>
+            <h3>Mockito</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bx-code-curly'></i>
+            <h3>SonarQube</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bx-message-square-dots'></i>
+            <h3>JMS</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bx-data'></i>
+            <h3>Kafka</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bx-cloud'></i>
+            <h3>RESTful APIs</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Swagger</h3>
+        </div>
+        <div class="skill-box">
+            <i class='bx bx-terminal'></i>
+            <h3>Postman</h3>
+        </div>
+    </div>
+</section>
 
+<!-- Experience section design -->
+
+<section class="experience" id="experience">
+    <h2 class="heading">My <span class="typed-heading" data-text="Experience"></span></h2>
+    <div class="experience-container">
+        <div class="experience-box">
+            <h3>Software Engineer</h3>
+            <h4>Capgemini India Pvt. Limited, Bangalore</h4>
+            <p>November 2021 – December 2024</p>
+            <ul>
+                <li>Collaborated with cross-functional teams to migrate legacy applications to modern, scalable tech stacks using Spring Boot and microservices.</li>
+                <li>Led the design and implementation of RESTful APIs using a microservices architecture, enhancing communication between distributed systems.</li>
+                <li>Improved code quality by integrating SonarQube for code analysis, reducing code smells and increasing code coverage by 30%.</li>
+                <li>Implemented message-driven architecture with JMS and Kafka, optimizing real-time data streaming and communication between services.</li>
+                <li>Utilized JUnit and Mockito for unit testing, achieving thorough test coverage and ensuring robust application performance.</li>
+                <li>Created and managed CI/CD pipelines with Jenkins, automating the deployment process, reducing manual errors, and speeding up deployment cycles.</li>
+                <li>Participated in scrum meetings and provided insights into technical solutions aligned with business goals.</li>
+                <li>Mentored junior developers, providing guidance on best practices, design patterns, and personal development.</li>
+                <li>Debugged complex applications, resolving critical bugs and improving system performance and user experience.</li>
+                <li> </li>
+                <li> </li>
+                <li> </li>
+            </ul>
+        </div>
+        <div class="experience-box">
+            <h3>Senior Associate Consultant</h3>
+            <h4>Infosys, Pune</h4>
+            <p>December 2024 – Present</p>
+            <ul>
+                <li>Developed a web application with Spring Boot and integrated Razorpay for payment processing.</li>
+                <li>Implemented RESTful APIs for secure and efficient payment transactions.</li>
+                <li>Integrating cloud services to optimize application performance and scalability.</li>
+                <li>Conducting code reviews and ensuring adherence to best practices and coding standards.</li>
+                <li>Collaborating with cross-functional teams to deliver high-quality software solutions.</li>
+                <li>Providing mentorship and guidance to junior developers, fostering a culture of continuous learning.</li>
+                <li>Implementing CI/CD pipelines to streamline the deployment process and reduce time-to-market.</li>
+                <li>Utilized JUnit and Mockito for unit testing, achieving thorough test coverage and ensuring robust application performance.</li>
+                <li>Utilizing containerization technologies like Docker and Kubernetes for efficient application deployment.</li>
+                <li>Participating in agile ceremonies and contributing to sprint planning and retrospectives.</li>
+                <li> </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!--Portfolio section design -->
 
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
+        <h2 class="heading">Latest <span class="typed-heading" data-text="Projects"></span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="pics/shopme.jpg" alt="">
+                <img src="pics/shop_me.png" alt="">
                 <div class="portfolio-layer">
                     <h4>Shop Me</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. In neque consectetur 
-                        eaque possimus accusamus recusandae 
-                        repellendus inventore omnis, non vero.</p>
-                        <a href="https://github.com/Komal305/ShopMe"></a>
+                    <p>ShopMe is an innovative Ecommerce platform built with Java Spring Boot, designed to provide a seamless 
+                        shopping experience. This project features user authentication, 
+                        product listings, a shopping cart, and an order management system.
+                         The frontend is developed using JavaScript, HTML, and CSS, making 
+                         it a responsive and robust application suitable for both mobile and desktop users.</p>
+                        <a href="https://github.com/Komal305/ShopMe"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="pics/bankimg.jpeg" alt="">
+                <img src="pics/home_Loan.png" alt="">
                 <div class="portfolio-layer">
                     <h4>Home Loan</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. In neque consectetur 
-                        eaque possimus accusamus recusandae 
-                        repellendus inventore omnis, non vero.</p>
-                        <a href="https://github.com/Komal305/HomeLoanRepo"></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="pics/e-commerce.jpeg" alt="">
-                <div class="portfolio-layer">
-                    <h4>E-commerce Website</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. In neque consectetur 
-                        eaque possimus accusamus recusandae 
-                        repellendus inventore omnis, non vero.</p>
-                        <a href="https://github.com/Komal305/E-commerce"></a>
+                    <p>HomeLoan is a comprehensive Home Loan Application developed using Spring Boot, JWT, 
+                        Hibernate, and MySQL. It offers secure user authentication, EMI calculation,
+                         loan tracking, and admin management. Users can apply for loans,
+                          track their application status, and view available loan offerings. 
+                          The application is also integrated with Swagger for API documentation and testing</p>
+                        <a href="https://github.com/Komal305/HomeLoanRepo"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
@@ -159,44 +268,112 @@
                 <img src="pics/blog.png" alt="">
                 <div class="portfolio-layer">
                     <h4>Blog Application</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. In neque consectetur 
-                        eaque possimus accusamus recusandae 
-                        repellendus inventore omnis, non vero.</p>
-                        <a href="https://github.com/Komal305/Blog"></a>
+                    <p>The Spring Boot application integrates springdoc-openapi to generate OpenAPI (Swagger) 
+                        documentation, showcasing RESTful APIs. Customized using OpenAPI configuration,
+                         it details API endpoints, versioning, and contact information. With swagger-ui
+                          integration, developers can easily explore and interact with the API endpoints,
+                           facilitating efficient development and testing workflows.</p>
+                        <a href="https://github.com/Komal305/Blog"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="pics/porffolio5.img" alt="">
+                <img src="pics/razor_pay.png" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. In neque consectetur 
-                        eaque possimus accusamus recusandae 
-                        repellendus inventore omnis, non vero.</p>
-                        <a href=""></a>
+                    <h4>Payment Gateway</h4>
+                    <p>Developed a web application using Spring Boot, integrating Razorpay payment gateway.
+                        Implemented RESTful APIs for creating and verifying payment transactions.
+                        Designed a responsive front-end using HTML, CSS, and Bootstrap.
+                        Conducted testing in Razorpay's test mode, successfully recording and verifying payment details on the Razorpay dashboard..</p>
+                        <a href="https://github.com/Komal305/Razorpay-payment-gateway"><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
             <div class="portfolio-box">
-                <img src="pics/portfolio6.img" alt="">
+                <img src="pics/IMG_5506.jpeg" alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
+                    <h4>On development</h4>
                     <p>Lorem ipsum dolor sit amet consectetur 
                         adipisicing elit. In neque consectetur 
                         eaque possimus accusamus recusandae 
                         repellendus inventore omnis, non vero.</p>
-                        <a href=""></a>
+                        <a href=""><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="pics/IMG_5506.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>On development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. In neque consectetur 
+                        eaque possimus accusamus recusandae 
+                        repellendus inventore omnis, non vero.</p>
+                        <a href=""><i class='bx bxl-github'></i></a>
                 </div>
             </div>
 
         </div>
     </section>
 
+<!-- Hobbies section design -->
 
+<section class="hobbies" id="hobbies">
+    <h2 class="heading">My <span class="typed-heading" data-text="Hobbies"></span></h2>
+    <div class="hobbies-container">
+        <div class="hobbies-ticker">
+            <!-- Hobbies will be dynamically generated here -->
+        </div>
+    </div>
+</section>
+
+<!--Art work -->
+<section class="art" id="art">
+    <h2 class="heading">My <span class="typed-heading" data-text="Pencile "></span> Art</h2>
+    <div class="container">
+        <div class="work-list">
+        <div class="work">
+            <img src="pics/eyes.png" alt="">
+            <div class="layer">
+                <h3>Eyes that hold galaxies within</h3>
+                <p>Photography is an immediate reaction, drawing is a meditation.</p>
+                <a href="https://www.instagram.com/p/CvTr03UvU5r/"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="pics/broken.png" alt="">
+            <div class="layer">
+                <h3>Life shrinks or expands in proportion to one’s courage</h3>
+                <p>If I try to articulate every little detail in a drawing, it would be like missing the forest for the trees.</p>
+                <a href="https://www.instagram.com/p/CUAJENusb5w/"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div> 
+        <div class="work">
+            <img src="pics/women.png" alt="">
+            <div class="layer">
+                <h3>physiognomy Art </h3>
+                <p>Visual storytelling of one kind or another has been around since cavemen were drawing on the walls. </p>
+                <a href="https://www.instagram.com/p/CPSytheD4hE/"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+        </div>     
+        </div>
+        <a href="https://www.instagram.com/komalrani_3333/" class="btn">Follow me on Instagram</a>
+    </div>
+</div>
+
+<!-- Books I Read section design -->
+<section class="books" id="books">
+    <h2 class="heading">Books <span class="typed-heading" data-text="I Read"></span></h2>
+    <div class="books-container">
+        <div class="books-ticker">
+            <!-- Books will be dynamically generated here -->
+        </div>
+    </div>
+</section>
+
+<!-- contect section -->
         <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me!</span></h2>
+            <h2 class="heading">Contact <span class="typed-heading" data-text="Me!"></span></h2>
             <form action="#">
 
                 <div class="input-box">
@@ -206,14 +383,14 @@
 
                 <div class="input-box">
                     <input type="number" placeholder="Mobile number">
-                    <input type="text" placeholder="Email subject">
+                    <input type="text" placeholder="Address">
                 </div>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Suggestion"></textarea>
                 <input type="submit" value="Send message" class="btn">
             </form>
         </section>
 
-
+<!-- footer design -->
         <footer class="footer"> 
             <div class="footer-text">
                 <p>Copywrite  & copy; 2023 by codehal | All Rights Reserved.</p>
@@ -223,14 +400,9 @@
                 <a href="#home"><i class='bx bxs-arrow-to-top'></i></a>
             </div>
         </footer>
+     
 
-        <!-- scroll reveal -->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--typed js-->
-
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <script src="js/script.js"></script>
+<!-- Your custom script -->
+<script src="script.js"></script>
 </body>
 </html>
